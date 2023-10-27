@@ -1,0 +1,6 @@
+export { default as Action } from './action'
+export * as Auth from './auth'
+export { default as ForgotPassword } from './auth/forgot-password'
+export { default as Home } from './home/home'
+export { default as ResetPassword } from './auth/reset-password'
+export { default as Verification } from './verification'
