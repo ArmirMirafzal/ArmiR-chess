@@ -23,7 +23,7 @@ export const updateProfile = (user: User, { name }: Omit<IForm.Register, 'email'
 
 export const login = ({ email, password }: IForm.Login) => signInWithEmailAndPassword(auth, email, password)
 
-export const sendVerification = () => sendEmailVerification(auth.currentUser!, { url: `${window.location.origin}/verification` })
+export const sendVerification = () => sendEmailVerification(auth.currentUser!, { url: `https://armir-chess.netlify.app/verification` })
 
 export const emailVerify = (oobCode: string) => applyActionCode(auth, oobCode)
 
