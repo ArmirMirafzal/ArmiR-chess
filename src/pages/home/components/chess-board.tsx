@@ -72,9 +72,8 @@ const Board = () => {
     if (selectValue === '♜' && arr.some(row => row.includes('♜'))) {
       alert.error('A ♜ is already present on the chessboard.')
       return
-    } else {
-      arr[rowIdx][colIdx] = selectValue
     }
+    arr[rowIdx][colIdx] = selectValue
 
     setBoard(arr)
   }

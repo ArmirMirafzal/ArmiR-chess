@@ -22,4 +22,4 @@ const Auth = ({ children }: AuthProps) => {
   return <AuthContext.Provider value={{ ...state, methods }}>{children}</AuthContext.Provider>
 }
 
-export default Auth
+export default Auth;
