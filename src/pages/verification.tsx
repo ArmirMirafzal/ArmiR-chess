@@ -16,11 +16,11 @@ const Verification = (props: VerificationProps) => {
 
       await Service.sendVerification()
 
-      alert.success('Sent verification link 🎉')
+      alert.success('Sent verification link 🎉@@@@@@@@@@@@@@@@@')
 
       setLoading(false)
     } catch (err: any) {
-      alert.error(err?.message)
+      alert.error(`${err?.message} @@@@@@@@@@@@`)
       setLoading(false)
     }
   }
