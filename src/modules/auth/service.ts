@@ -23,6 +23,8 @@ export const updateProfile = (user: User, { name }: Omit<IForm.Register, 'email'
 
 export const login = ({ email, password }: IForm.Login) => signInWithEmailAndPassword(auth, email, password)
 
+console.log('service file window location', window.location.origin)
+
 export const sendVerification = () => sendEmailVerification(auth.currentUser!, { url: `${window.location.origin}/verification` })
 
 export const emailVerify = (oobCode: string) => applyActionCode(auth, oobCode)
