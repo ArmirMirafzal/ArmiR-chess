@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
+console.log("env filelani ko'rish", process.env)
+
 root.render(
   <BrowserRouter>
     <Containers.Auth>
